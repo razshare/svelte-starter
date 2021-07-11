@@ -1,14 +1,3 @@
-<script lang="ts">
-  let count: number = 0
-  const increment = () => {
-    count += 1
-  }
-</script>
-
-<button on:click={increment}>
-  Clicks: {count}
-</button>
-
 <style>
   button {
     font-family: inherit;
@@ -32,3 +21,14 @@
     background-color: rgba(255, 62, 0, 0.2);
   }
 </style>
+
+<script lang="ts">
+  let count = 0
+  const increment = () => {
+    count += 1
+  }
+</script>
+
+<button on:click={increment}>
+  Clicks: {count}
+</button>

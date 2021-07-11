@@ -2,15 +2,30 @@
   "name": "vite-svelte-ts-starter",
   "version": "0.0.0",
   "type": "module",
+  "lint-staged": {
+    "*.{js,ts,svelte}": ["svelte-check", "npm run lint:fix"]
+  },
   "scripts": {
     "dev": "vite",
     "build": "vite build",
     "serve": "vite preview",
-    "check": "svelte-check --tsconfig ./tsconfig.json"
+    "check": "svelte-check --tsconfig ./tsconfig.json",
+    "format": "prettier --write ./src/**/*.{js,svelte,html,ts}",
+    "lint": "eslint --no-error-on-unmatched-pattern \"./src/**/*.{js,ts,svelte}\"",
+    "lint:fix": "eslint --no-error-on-unmatched-pattern --fix \"./src/**/*.{js,ts,svelte}\"",
+    "prelint": "npm run format"
   },
   "devDependencies": {
     "@sveltejs/vite-plugin-svelte": "^1.0.0-next.11",
     "@tsconfig/svelte": "^2.0.1",
+    "@typescript-eslint/eslint-plugin": "^4.28.2",
+    "@typescript-eslint/parser": "^4.28.2",
+    "eslint": "^7.30.0",
+    "eslint-plugin-svelte3": "^3.2.0",
+    "husky": "^7.0.1",
+    "lint-staged": "^11.0.0",
+    "prettier": "^2.3.2",
+    "prettier-plugin-svelte": "^2.3.1",
     "svelte": "^3.37.0",
     "svelte-check": "^2.1.0",
     "svelte-preprocess": "^4.7.2",
