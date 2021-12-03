@@ -43,8 +43,8 @@
 </style>
 
 <script lang="ts">
-  import logo from './assets/svelte.png'
-  import Counter from './lib/components/Counter.svelte'
+import { logo } from "@assets";
+import { Counter } from "@components";
 </script>
 
 <main>
