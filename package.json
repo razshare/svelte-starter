@@ -3,7 +3,10 @@
   "version": "0.0.0",
   "type": "module",
   "lint-staged": {
-    "*.{js,ts,svelte}": ["svelte-check", "npm run lint:fix"]
+    "*.{js,ts,svelte}": [
+      "svelte-check",
+      "npm run lint:fix"
+    ]
   },
   "scripts": {
     "dev": "vite",
@@ -30,6 +33,9 @@
     "svelte-preprocess": "^4.9.8",
     "tslib": "^2.3.1",
     "typescript": "^4.5.3",
-    "vite": "^2.7.1"
+    "vite": "^2.7.1",
+    "workbox-cacheable-response": "^6.4.2",
+    "workbox-routing": "^6.4.2",
+    "workbox-strategies": "^6.4.2"
   }
 }

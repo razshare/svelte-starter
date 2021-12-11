@@ -1,3 +1,3 @@
+import InstallButton from './lib/components/InstallButton.svelte'
 import Counter from './lib/components/Counter.svelte'
-import App from './App.svelte'
-export { Counter, App }
+export { Counter,InstallButton }

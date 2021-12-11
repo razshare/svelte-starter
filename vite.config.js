@@ -2,20 +2,20 @@ import { defineConfig } from 'vite'
 import { svelte } from '@sveltejs/vite-plugin-svelte'
 import path from 'path'
 import { fileURLToPath } from 'url';
-const __filename = fileURLToPath(import.meta.url);
-const __dirname = path.dirname(__filename);
+const file = fileURLToPath(import.meta.url);
+const dir = path.dirname(file).replace(/\\+/, '/');
 
 // https://vitejs.dev/config/
 export default defineConfig({
   plugins: [svelte()],
   resolve: {
     alias: {
-      '@scripts': `${path.resolve(__dirname, 'src/scripts.ts')}`,
-      '@components': `${path.resolve(__dirname, 'src/components.ts')}`,
-      '@types': `${path.resolve(__dirname, 'src/types.d.ts')}`,
-      '@stores': `${path.resolve(__dirname, 'src/stores.ts')}`,
-      '@constants': `${path.resolve(__dirname, 'src/constants.ts')}`,
-      '@assets': `${path.resolve(__dirname, 'src/assets.ts')}`
+      '@scripts': `${path.resolve(dir, 'src/scripts.ts')}`,
+      '@components': `${path.resolve(dir, 'src/components.ts')}`,
+      '@types': `${path.resolve(dir, 'src/types.d.ts')}`,
+      '@stores': `${path.resolve(dir, 'src/stores.ts')}`,
+      '@constants': `${path.resolve(dir, 'src/constants.ts')}`,
+      '@assets': `${path.resolve(dir, 'src/assets.ts')}`
     },
   },
 })
