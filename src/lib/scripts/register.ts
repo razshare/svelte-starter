@@ -1,6 +1,9 @@
-import { service } from '@assets'
+import { service as serviceUrl } from '@assets';
 
 export async function register() {
+  console.log("service:",serviceUrl);
+  const service = serviceUrl.startsWith("data:")?`/assets/service.js`:serviceUrl
+  
   if (!window.navigator || !window.navigator.serviceWorker)
     return console.warn('This platform does not suppoert service workers.')
 

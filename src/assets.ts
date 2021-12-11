@@ -1,3 +1,3 @@
 import logo from './assets/svelte.png'
-import service from './lib/scripts/service.ts?url'
+import service from './assets/service.ts?url'
 export { logo, service }

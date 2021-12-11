@@ -1,26 +1,13 @@
 type BeforeInstallPromptEvent = {
-  preventDefault?: CallableFunction
+  preventDefault: CallableFunction
   prompt?(): Promise<unknown>
 }
 
 let event: false | BeforeInstallPromptEvent = false
 
-let isTooSoon = true;
-
-window.addEventListener('beforeinstallprompt', e => {
+window.addEventListener('beforeinstallprompt', (e:BeforeInstallPromptEvent) => {
   e.preventDefault()
-  event = e as unknown as BeforeInstallPromptEvent
-
-  if (isTooSoon) {
-    e.preventDefault(); // Prevents prompt display
-    // Prompt later instead:
-    setTimeout(function() {
-      isTooSoon = false;
-      if(event && event.prompt)
-        void event.prompt(); // Throws if called more than once or default not prevented
-    }, 10000);
-  }
-
+  event = e
 })
 
 export async function install(): Promise<boolean> {
