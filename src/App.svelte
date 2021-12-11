@@ -44,7 +44,7 @@
 
 <script lang="ts">
   import { logo } from '@assets'
-  import { Counter, InstallButton } from '@components'
+  import { Counter } from '@components'
 </script>
 
 <main>
@@ -52,9 +52,6 @@
   <h1>Hello Typescript!</h1>
 
   <Counter />
-  <br/>
-  <br/>
-  <InstallButton />
 
   <p>
     Visit <a href="https://svelte.dev">svelte.dev</a> to learn how to build Svelte apps.
