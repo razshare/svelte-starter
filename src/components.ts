@@ -1,4 +1,3 @@
 import Counter from './lib/components/Counter.svelte'
-export {
-    Counter
-}
+import App from './App.svelte'
+export { Counter, App }

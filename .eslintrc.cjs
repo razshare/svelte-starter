@@ -1,5 +1,5 @@
 module.exports = {
-    parser: '@typescript-eslint/parser',
+    parser: '@typescript-eslint/parser', 
     extends: [
       'eslint:recommended',
       'plugin:@typescript-eslint/recommended',
@@ -18,7 +18,7 @@ module.exports = {
     },
     overrides: [
       {
-        files: ['*.svelte'],
+        files: ['*.svelte','*.cjs'],
         processor: 'svelte3/svelte3'
       }
     ],

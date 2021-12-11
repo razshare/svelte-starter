@@ -15,7 +15,7 @@ export default defineConfig({
       '@types': `${path.resolve(__dirname, 'src/types.d.ts')}`,
       '@stores': `${path.resolve(__dirname, 'src/stores.ts')}`,
       '@constants': `${path.resolve(__dirname, 'src/constants.ts')}`,
-      '@assets': `${path.resolve(__dirname, 'src/assets')}`
+      '@assets': `${path.resolve(__dirname, 'src/assets.ts')}`
     },
   },
 })
