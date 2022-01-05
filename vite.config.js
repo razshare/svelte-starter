@@ -18,6 +18,9 @@ export default defineConfig({
       '@assets': `${path.resolve(dir, 'src/assets.ts')}`
     },
   },
+  optimizeDeps: {
+    exclude: ['svelte-routing'],
+  },
   build:{
     rollupOptions: {
       output: {
