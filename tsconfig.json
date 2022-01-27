@@ -15,12 +15,7 @@
     "checkJs": true,
     "strict": true,
     "paths": {
-      "@scripts": ["src/scripts.ts"],
-      "@components": ["src/components.ts"],
-      "@types": ["src/types.d.ts"],
-      "@stores": ["src/stores.ts"],
-      "@constants": ["src/constants.ts"],
-      "@assets": ["src/assets.ts"]
+      "@lib/*": ["src/lib/*"]
     }
   },
   "include": ["src/**/*.d.ts", "src/**/*.ts", "src/**/*.js", "src/**/*.svelte"]
