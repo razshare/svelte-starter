@@ -13,7 +13,7 @@ export default defineConfig({
       '@components': `${path.resolve(dir, 'src/components.ts')}`,
       '@stores': `${path.resolve(dir, 'src/stores.ts')}`,
       '@types': `${path.resolve(dir, 'src/types.d.ts')}`,
-      '@constants': `${path.resolve(dir, 'src/types.d.ts')}`,
+      '@constants': `${path.resolve(dir, 'src/constants.ts')}`,
       '@scripts': `${path.resolve(dir, 'src/scripts.ts')}`,
       '@assets': `${path.resolve(dir, 'src/assets.ts')}`
     },
