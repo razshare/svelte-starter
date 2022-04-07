@@ -1,7 +1,5 @@
-import App from './App.svelte'
+import Main from './Main.svelte'
 
-const app = new App({
-  target: document.getElementById('app') as Element,
+new Main({
+  target: document.getElementById('root') as Element,
 })
-
-export default app
