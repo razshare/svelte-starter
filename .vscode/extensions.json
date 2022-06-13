@@ -1,14 +1,6 @@
 {
   "recommendations": [
     "svelte.svelte-vscode",
-    "emeraldwalk.RunOnSave",
-    "HookyQR.beautify",
-    "aaron-bond.better-comments",
-    "ExodiusStudios.comment-anchors",
-    "dbaeumer.vscode-eslint",
-    "csstools.postcss",
-    "rvest.vs-code-prettier-eslint",
-    "fivethree.vscode-svelte-snippets",
-    "ms-mssql.mssql"
+    "fivethree.vscode-svelte-snippets"
   ]
 }

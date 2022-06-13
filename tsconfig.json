@@ -15,12 +15,12 @@
     "checkJs": true,
     "strict": true,
     "paths": {
-      "@components": ["src/components.ts"],
-      "@stores": ["src/stores.ts"],
-      "@types": ["src/types.d.ts"],
-      "@constants": ["src/constants.ts"],
-      "@scripts": ["src/scripts.ts"],
-      "@assets": ["src/assets.ts"]
+      "@components": ["src/@components.ts"],
+      "@stores": ["src/@stores.ts"],
+      "@types": ["src/@types.d.ts"],
+      "@constants": ["src/@constants.ts"],
+      "@scripts": ["src/@scripts.ts"],
+      "@assets": ["src/@assets.ts"]
     }
   },
   "include": ["src/**/*.d.ts", "src/**/*.ts", "src/**/*.js", "src/**/*.svelte"]
