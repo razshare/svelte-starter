@@ -6,7 +6,7 @@ module.exports = {
       'plugin:@typescript-eslint/recommended-requiring-type-checking'
     ],
     parserOptions: {
-      ecmaVersion: 2020,
+      ecmaVersion: 2022,
       sourceType: 'module',
       tsconfigRootDir: __dirname,
       project: ['./tsconfig.json'],

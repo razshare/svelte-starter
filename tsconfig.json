@@ -15,11 +15,11 @@
     "checkJs": true,
     "strict": true,
     "paths": {
-      "@components": ["src/@components.ts"],
-      "@stores": ["src/@stores.ts"],
-      "@types": ["src/@types.d.ts"],
+      "@components/*": ["src/lib/@components/*"],
+      "@stores/*": ["src/lib/@stores/*"],
+      "@types/*": ["src/@typeslib/@types/*"],
+      "@scripts/*": ["src/lib/@scripts/*"],
       "@constants": ["src/@constants.ts"],
-      "@scripts": ["src/@scripts.ts"],
       "@assets": ["src/@assets.ts"]
     }
   },

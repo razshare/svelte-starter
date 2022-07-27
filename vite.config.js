@@ -10,11 +10,11 @@ export default defineConfig({
   plugins: [svelte()],
   resolve: {
     alias: {
-      '@components': `${path.resolve(dir, 'src/@components.ts')}`,
-      '@stores': `${path.resolve(dir, 'src/@stores.ts')}`,
-      '@types': `${path.resolve(dir, 'src/@types.d.ts')}`,
+      '@components': `${path.resolve(dir, 'src/lib/@components')}`,
+      '@stores': `${path.resolve(dir, 'src/lib/@stores')}`,
+      '@types': `${path.resolve(dir, 'src/lib/@types')}`,
+      '@scripts': `${path.resolve(dir, 'src/lib/@scripts')}`,
       '@constants': `${path.resolve(dir, 'src/@constants.ts')}`,
-      '@scripts': `${path.resolve(dir, 'src/@scripts.ts')}`,
       '@assets': `${path.resolve(dir, 'src/@assets.ts')}`
     },
   },
