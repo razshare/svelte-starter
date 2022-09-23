@@ -1,5 +1,6 @@
+import './main.scss'
 import Main from './main.svelte'
 
 new Main({
-  target: document.getElementById('root') as Element,
+  target: document.getElementById('main') as Element,
 })

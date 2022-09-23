@@ -20,7 +20,7 @@
       "@types/*": ["src/@typeslib/@types/*"],
       "@scripts/*": ["src/lib/@scripts/*"],
       "@constants": ["src/@constants.ts"],
-      "@assets": ["src/@assets.ts"]
+      "@assets": ["src/lib/@assets.ts"]
     }
   },
   "include": ["src/**/*.d.ts", "src/**/*.ts", "src/**/*.js", "src/**/*.svelte"]
