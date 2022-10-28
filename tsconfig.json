@@ -19,7 +19,7 @@
       "@stores/*": ["src/lib/@stores/*"],
       "@types/*": ["src/@typeslib/@types/*"],
       "@scripts/*": ["src/lib/@scripts/*"],
-      "@constants": ["src/@constants.ts"],
+      "@constants": ["src/lib/@constants.ts"],
       "@assets": ["src/lib/@assets.ts"]
     }
   },
