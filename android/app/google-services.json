@@ -1,0 +1,68 @@
+{
+  "project_info": {
+    "project_number": "11276098213",
+    "project_id": "svelte-starter-7eae3",
+    "storage_bucket": "svelte-starter-7eae3.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:11276098213:android:050fafe8348f2918ba4b4c",
+        "android_client_info": {
+          "package_name": "net.razshare.svelte.starter"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "11276098213-b34e9rtha9rr3k6ul3o78podp3cj0o4g.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyBxUZ8lcl5WqYSwftLSY0TLMkBUaqcfTDM"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "11276098213-b34e9rtha9rr3k6ul3o78podp3cj0o4g.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    },
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:11276098213:android:2f1cd97b75137eedba4b4c",
+        "android_client_info": {
+          "package_name": "net.razshare.svelte.starter"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "11276098213-b34e9rtha9rr3k6ul3o78podp3cj0o4g.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyBxUZ8lcl5WqYSwftLSY0TLMkBUaqcfTDM"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "11276098213-b34e9rtha9rr3k6ul3o78podp3cj0o4g.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

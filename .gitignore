@@ -1,8 +1,8 @@
-.DS_Store
-/node_modules/
 /.svelte-kit
 /package
 /dist
-/.idea
-/android/
-/ios/
+node_modules
+.idea
+.sourcemaps
+*.map
+.DS_Store
