@@ -10,6 +10,7 @@
   "scripts": {
     "dev": "vite",
     "build": "vite build && npx cap sync",
+    "serve": "vite preview",
     "start": "npx cap open android",
     "check": "svelte-check --tsconfig ./tsconfig.json",
     "format": "prettier --write ./src/**/*.{js,svelte,html,ts}",
