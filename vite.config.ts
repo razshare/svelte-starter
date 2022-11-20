@@ -7,7 +7,7 @@ const dir = path.dirname(file).replace(/\\+/, '/')
 
 // https://vitejs.dev/config/
 export default defineConfig({
-  root: './src',
+  root: '.',
   plugins: [svelte()],
   resolve: {
     alias: {
@@ -23,7 +23,7 @@ export default defineConfig({
     exclude: ['svelte-routing'],
   },
   build: {
-    outDir: '../dist',
+    outDir: 'dist',
     minify: false,
     emptyOutDir: true,
     rollupOptions: {
