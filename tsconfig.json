@@ -4,6 +4,7 @@
     "target": "esnext",
     "module": "esnext",
     "resolveJsonModule": true,
+    "typeRoots": ["node_modules/@types"],
     "baseUrl": ".",
     /**
      * Typecheck JS in `.svelte` and `.js` files by default.
