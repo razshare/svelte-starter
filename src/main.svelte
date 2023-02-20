@@ -1,8 +1,10 @@
 <script lang="ts">
-  import { SplashScreen } from '@capacitor/splash-screen'
   import { listen, register } from '@scripts/push-notifications'
+  import { SplashScreen } from '@capacitor/splash-screen'
+  import Counter from '@components/Counter.svelte'
   import { onMount } from 'svelte'
 
+  //@ts-ignore
   if (window.cordova) {
     onMount(SplashScreen.hide)
     onMount(async () => {
@@ -21,7 +23,5 @@
 </script>
 
 <div class="grid justify-center content-center h-full w-full">
-  <div class="btn btn-primary" on:mousedown={() => counter++}>
-    Counter: {counter}
-  </div>
+  <Counter />
 </div>
