@@ -13,7 +13,7 @@ export default defineConfig({
     alias: {
       '@components': `${path.resolve(dir, 'src/lib/@components')}`,
       '@stores': `${path.resolve(dir, 'src/lib/@stores')}`,
-      '@types': `${path.resolve(dir, 'src/lib/@types')}`,
+      '@t': `${path.resolve(dir, 'src/lib/@types')}`,
       '@scripts': `${path.resolve(dir, 'src/lib/@scripts')}`,
       '@constants': `${path.resolve(dir, 'src/lib/@constants.ts')}`,
       '@assets': `${path.resolve(dir, 'src/lib/@assets.ts')}`,
