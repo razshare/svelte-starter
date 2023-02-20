@@ -1,6 +1,6 @@
 {
   "name": "svelte-mobile-starter",
-  "version": "1.0.0",
+  "version": "0.1.0",
   "description": "A svelte template for creating mobile applications",
   "type": "module",
   "keywords": [
