@@ -1,8 +1,9 @@
 <script lang="ts">
   import { listen, register } from '@scripts/push-notifications'
   import { SplashScreen } from '@capacitor/splash-screen'
-  import Counter from '@components/Counter.svelte'
   import { onMount } from 'svelte'
+  import { Route, Router } from 'svelte-routing'
+  import Counter from '@components/Counter.svelte'
 
   //@ts-ignore
   if (window.cordova) {
@@ -18,10 +19,10 @@
       }
     })
   }
-
-  let counter = 0
 </script>
 
 <div class="grid justify-center content-center h-full w-full">
-  <Counter />
+  <Router>
+    <Route path="*" component={Counter} />
+  </Router>
 </div>
