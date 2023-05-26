@@ -3,7 +3,7 @@
   import { SplashScreen } from '@capacitor/splash-screen'
   import { onMount } from 'svelte'
   import { Route, Router } from 'svelte-routing'
-  import Counter from '@components/Counter.svelte'
+  import Counter from '@components/counter.svelte'
 
   //@ts-ignore
   if (window.cordova) {
