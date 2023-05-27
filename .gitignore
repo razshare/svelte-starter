@@ -1,6 +1,8 @@
 /.svelte-kit
 /package
 /dist
+/android
+/ios
 node_modules
 .idea
 .sourcemaps
