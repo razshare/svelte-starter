@@ -8,12 +8,12 @@
 		"sourceMap": true,
 		"moduleResolution": "NodeNext",
 		"paths": {
-			"@components/*": ["./src/lib/components/*"],
-			"@stores/*": ["./src/lib/stores/*"],
-			"@types/*": ["./src/lib/types/*"],
-			"@scripts/*": ["./src/lib/scripts/*"],
-			"@constants/*": ["./src/lib/constants/*"],
-			"@assets/*": ["./assets/*"]
+			":components/*": ["./src/lib/components/*"],
+			":stores/*": ["./src/lib/stores/*"],
+			":types/*": ["./src/lib/types/*"],
+			":scripts/*": ["./src/lib/scripts/*"],
+			":constants/*": ["./src/lib/constants/*"],
+			":assets/*": ["./assets/*"]
 		}
 	}
 }
