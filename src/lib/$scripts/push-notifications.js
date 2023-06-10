@@ -6,7 +6,7 @@ export const unlisten = async () => {
 
 /**
  * Listen for push notifications events.
- * @param {import('../types/listener-options.js').PushNotificationsListenerOptions} options
+ * @param {import('../$types/listener-options.js').PushNotificationsListenerOptions} options
  */
 export const listen = async options => {
 	if (options.onregistration) await PushNotifications.addListener('registration', options.onregistration)

@@ -10,13 +10,18 @@
 		<meta name="format-detection" content="telephone=no" />
 		<meta name="msapplication-tap-highlight" content="no" />
 
-		<link rel="icon" type="image/x-icon" href="./assets/icon/favicon.ico" />
-		<link rel="manifest" href="./src/manifest.json" />
+		<link rel="icon" type="image/x-icon" href="./$assets/icon/favicon.ico" />
+		<link rel="manifest" href="./$assets/manifest.json" />
 		<link rel="stylesheet" href="./src/main.scss" />
 		<meta name="theme-color" content="#31d53d" />
 	</head>
 	<body>
 		<div id="main"></div>
-		<script type="module" src="./src/main.js"></script>
+		<script type="module">
+			import Main from './src/main.svelte'
+			new Main({
+				target: document.getElementById('main'),
+			})
+		</script>
 	</body>
 </html>
