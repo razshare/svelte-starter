@@ -28,7 +28,7 @@ export default defineConfig({
 		exclude: ['svelte-routing'],
 	},
 	build: {
-		outDir: 'dist',
+		outDir: 'www',
 		minify: true,
 		emptyOutDir: true,
 		rollupOptions: {
