@@ -1,0 +1,24 @@
+{
+	"compilerOptions": {
+		"module": "ESNext",
+		"allowJs": true,
+		"checkJs": true,
+		"esModuleInterop": true,
+		"forceConsistentCasingInFileNames": true,
+		"resolveJsonModule": true,
+		"skipLibCheck": true,
+		"sourceMap": true,
+		"strict": true,
+		"moduleResolution": "NodeNext",
+		"paths": {
+			"@main": ["./src/main.svelte"],
+			"@pages/*": ["./src/lib/@pages/*"],
+			"@components/*": ["./src/lib/@components/*"],
+			"@stores/*": ["./src/lib/@stores/*"],
+			"@t/*": ["./src/lib/@types/*"],
+			"@scripts/*": ["./src/lib/@scripts/*"],
+			"@constants/*": ["./src/lib/@constants/*"],
+			"@assets/*": ["./@assets/*"]
+		}
+	}
+}
