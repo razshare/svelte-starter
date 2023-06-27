@@ -1,6 +1,6 @@
 /.svelte-kit
 /package
-/dist
+/www
 /android
 /ios
 /pnpm-lock.yaml

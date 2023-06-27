@@ -2,7 +2,7 @@
 const config = {
 	appId: 'io.myapp',
 	appName: 'my-app',
-	webDir: 'dist',
+	webDir: 'www',
 }
 
 export default config
