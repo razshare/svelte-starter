@@ -5,6 +5,8 @@
 
 <div class="grid justify-center content-center h-full w-full">
 	<Router>
-		<Route path="*" component={HomePage} />
+		<Route path="*">
+			<HomePage />
+		</Route>
 	</Router>
 </div>
