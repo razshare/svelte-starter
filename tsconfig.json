@@ -1,14 +1,6 @@
 {
 	"compilerOptions": {
-		"rootDirs": ["."],
-		"importsNotUsedAsValues": "error",
-		"isolatedModules": true,
-		"preserveValueImports": true,
-		"lib": ["esnext", "DOM", "DOM.Iterable"],
-		"moduleResolution": "node",
-		"module": "esnext",
-		"target": "esnext",
-		"ignoreDeprecations": "5.0",
+		"module": "ESNext",
 		"allowJs": true,
 		"checkJs": true,
 		"esModuleInterop": true,
@@ -17,6 +9,7 @@
 		"skipLibCheck": true,
 		"sourceMap": true,
 		"strict": true,
+		"moduleResolution": "NodeNext",
 		"paths": {
 			"@main": ["./src/main.svelte"],
 			"@pages/*": ["./src/lib/@pages/*"],
@@ -28,14 +21,6 @@
 			"@assets/*": ["./@assets/*"]
 		}
 	},
-	"include": [
-		"./vite.config.ts",
-		"./src/**/*.js",
-		"./src/**/*.ts",
-		"./src/**/*.svelte",
-		"./tests/**/*.js",
-		"./tests/**/*.ts",
-		"./tests/**/*.svelte"
-	],
+	"include": ["./vite.config.ts", "./src/**/*.js", "./src/**/*.ts", "./src/**/*.svelte"],
 	"exclude": ["./node_modules/**"]
 }
