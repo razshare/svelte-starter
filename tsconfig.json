@@ -1,6 +1,6 @@
 {
 	"compilerOptions": {
-		"rootDirs": ["..", "./types"],
+		"rootDirs": ["."],
 		"importsNotUsedAsValues": "error",
 		"isolatedModules": true,
 		"preserveValueImports": true,
