@@ -11,16 +11,13 @@ export default defineConfig({
 	plugins: [svelte()],
 	resolve: {
 		alias: {
-			'@manifest': `${path.resolve(dir, './src/manifest.json')}`,
-			'@favicon': `${path.resolve(dir, './@assets/icon/favicon.ico')}`,
-			'@logo': `${path.resolve(dir, './@assets/imgs/logo.png')}`,
 			'@main': `${path.resolve(dir, './src/main.svelte')}`,
 			'@pages': `${path.resolve(dir, './src/lib/@pages')}`,
 			'@components': `${path.resolve(dir, './src/lib/@components')}`,
 			'@stores': `${path.resolve(dir, './src/lib/@stores')}`,
 			'@t': `${path.resolve(dir, './src/lib/@types')}`,
 			'@scripts': `${path.resolve(dir, './src/lib/@scripts')}`,
-			'@constants': `${path.resolve(dir, './src/lib/@constants')}`,
+			'@constants': `${path.resolve(dir, './src/lib/@constants.ts')}`,
 			'@assets': `${path.resolve(dir, './@assets')}`,
 		},
 	},

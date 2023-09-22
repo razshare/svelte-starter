@@ -27,7 +27,7 @@
 			"@stores/*": ["./src/lib/@stores/*"],
 			"@t/*": ["./src/lib/@types/*"],
 			"@scripts/*": ["./src/lib/@scripts/*"],
-			"@constants/*": ["./src/lib/@constants/*"],
+			"@constants": ["./src/lib/@constants.ts"],
 			"@assets/*": ["./@assets/*"]
 		}
 	},
