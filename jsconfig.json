@@ -43,8 +43,9 @@
       ":stores/*": ["./src/lib/:stores/*"],
       ":types/*": ["./src/lib/:types/*"],
       ":scripts/*": ["./src/lib/:scripts/*"],
+      ":assets/*": ["./:assets/*"],
       ":constants": ["./src/lib/:constants.ts"],
-      ":assets/*": ["./:assets/*"]
+      ":main": ["./src/:main.ts"]
     }
   },
   /**
