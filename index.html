@@ -1,27 +1,27 @@
 <!DOCTYPE html>
 <html lang="en" dir="ltr" class="dark">
-	<head>
-		<meta charset="UTF-8" />
-		<title>My App</title>
-		<meta
-			name="viewport"
-			content="viewport-fit=cover, width=device-width, initial-scale=1.0, minimum-scale=1.0, maximum-scale=1.0, user-scalable=no"
-		/>
-		<meta name="format-detection" content="telephone=no" />
-		<meta name="msapplication-tap-highlight" content="no" />
+  <head>
+    <meta charset="UTF-8" />
+    <title>My App</title>
+    <meta
+      name="viewport"
+      content="viewport-fit=cover, width=device-width, initial-scale=1.0, minimum-scale=1.0, maximum-scale=1.0, user-scalable=no"
+    />
+    <meta name="format-detection" content="telephone=no" />
+    <meta name="msapplication-tap-highlight" content="no" />
 
-		<link rel="icon" type="image/x-icon" href="./:assets/icon/favicon.ico" />
-		<link rel="manifest" href="./manifest.json" />
-		<link rel="stylesheet" href="./src/main.scss" />
-		<meta name="theme-color" content="#31d53d" />
-	</head>
-	<body>
-		<div id="main"></div>
-		<script type="module">
-			import Main from './src/main.svelte'
-			new Main({
-				target: document.getElementById('main'),
-			})
-		</script>
-	</body>
+    <link rel="icon" type="image/x-icon" href="./:assets/icons/favicon.ico" />
+    <link rel="manifest" href="./manifest.json" />
+    <link rel="stylesheet" href="./src/main.scss" />
+    <meta name="theme-color" content="#31d53d" />
+  </head>
+  <body>
+    <div id="main"></div>
+    <script type="module">
+      import Main from './src/main.svelte'
+      new Main({
+        target: document.getElementById('main'),
+      })
+    </script>
+  </body>
 </html>
