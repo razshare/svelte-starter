@@ -7,26 +7,25 @@ const dir = path.dirname(file).replace(/\\+/, '/')
 
 // https://vitejs.dev/config/
 export default defineConfig({
-	root: '.',
 	plugins: [svelte()],
 	resolve: {
 		alias: {
-			'@main': `${path.resolve(dir, './src/main.svelte')}`,
-			'@pages': `${path.resolve(dir, './src/lib/@pages')}`,
-			'@components': `${path.resolve(dir, './src/lib/@components')}`,
-			'@stores': `${path.resolve(dir, './src/lib/@stores')}`,
-			'@t': `${path.resolve(dir, './src/lib/@types')}`,
-			'@scripts': `${path.resolve(dir, './src/lib/@scripts')}`,
-			'@constants': `${path.resolve(dir, './src/lib/@constants.ts')}`,
-			'@assets': `${path.resolve(dir, './@assets')}`,
+			':pages': `${path.resolve(dir, './src/lib/:pages')}`,
+			':components': `${path.resolve(dir, './src/lib/:components')}`,
+			':stores': `${path.resolve(dir, './src/lib/:stores')}`,
+			':types': `${path.resolve(dir, './src/lib/:types')}`,
+			':scripts': `${path.resolve(dir, './src/lib/:scripts')}`,
+			':constants': `${path.resolve(dir, './src/lib/:constants.js')}`,
+			':assets': `${path.resolve(dir, './:assets')}`,
 		},
 	},
 	optimizeDeps: {
 		exclude: ['svelte-routing'],
 	},
 	build: {
+		sourcemap: true,
 		outDir: 'dist',
-		minify: true,
+		minify: false,
 		emptyOutDir: true,
 		rollupOptions: {
 			output: {
