@@ -16,8 +16,9 @@ export default defineConfig({
       ':scripts': `${path.resolve(dir, './src/lib/:scripts')}`,
       ':assets': `${path.resolve(dir, './:assets')}`,
       ':constants': `${path.resolve(dir, './src/lib/:constants.js')}`,
-      ':types': `${path.resolve(dir, './src/:types.js')}`,
-      ':main': `${path.resolve(dir, './src/:main.js')}`,
+      ':types': `${path.resolve(dir, './src/lib/:types.js')}`,
+      ':style': `${path.resolve(dir, './src/lib/:style.scss')}`,
+      ':main': `${path.resolve(dir, './src/:main.svelte')}`,
     },
   },
   optimizeDeps: {
@@ -43,6 +44,9 @@ export default defineConfig({
       '^/api/.*': {
         target: 'http://127.0.0.1:8000',
         changeOrigin: false,
+        rewrite: function replace(path) {
+          return path.replace(/^\/api/, '')
+        },
         secure: false,
         ws: true,
       },

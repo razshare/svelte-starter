@@ -8,17 +8,19 @@
     "skipLibCheck": true,
     "sourceMap": true,
     "strict": true,
+    "types": ["bun-types"],
     "paths": {
       ":pages/*": ["./src/lib/:pages/*"],
       ":components/*": ["./src/lib/:components/*"],
       ":stores/*": ["./src/lib/:stores/*"],
       ":scripts/*": ["./src/lib/:scripts/*"],
       ":assets/*": ["./:assets/*"],
-      ":constants": ["./src/lib/:constants.js"],
-      ":types": ["./src/:types.js"],
-      ":main": ["./src/:main.js"]
+      ":constants": ["./src/lib/:constants.ts"],
+      ":types": ["./src/lib/:types.js"],
+      ":style": ["./src/lib/:style.scss"],
+      ":main": ["./src/:main.svelte"]
     },
-    "importsNotUsedAsValues": "error",
+    "importsNotUsedAsValues": "remove",
     "isolatedModules": true,
     "preserveValueImports": true,
     "lib": ["esnext", "DOM", "DOM.Iterable"],
@@ -29,9 +31,12 @@
   },
   "include": [
     "./vite.config.js",
+    "./.eslintrc.cjs",
     "./src/**/*.js",
+    "./src/**/*.ts",
     "./src/**/*.svelte",
     "./tests/**/*.js",
+    "./tests/**/*.ts",
     "./tests/**/*.svelte"
   ],
   "exclude": ["./node_modules/**"]
