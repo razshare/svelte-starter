@@ -21,9 +21,4 @@ export const PROMISE_EMPTY_ARRAY = new Promise(function run(resolve) {
 export const PROMISE_EMPTY_UNSAFE = new Promise(function run(resolve) {
   resolve(ok(true))
 })
-export const BORDER_THEME = 'border-gray-700 border-opacity-50'
-export const PATTERN_PAGE_ACCOUNT = /^\/accounts?(\/|$)/
-export const PATTERN_PAGE_DEVICES = /^\/devices?(\/|$)/
-export const PATTERN_PAGE_USERS = /^\/users?(\/|$)/
-export const PATTERN_PAGE_PLATFORM = /^\/platform(\/|$)/
 export const IS_DEV = '80' !== location.port && '443' !== location.port
