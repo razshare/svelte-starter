@@ -1,5 +1,5 @@
 {
-	"appId": "io.myapp",
-	"appName": "my-app",
-	"webDir": "./dist"
+  "appId": "io.myapp",
+  "appName": "my-app",
+  "webDir": "./dist"
 }

@@ -1,14 +1,5 @@
 {
   "compilerOptions": {
-    "allowJs": true,
-    "checkJs": true,
-    "esModuleInterop": true,
-    "forceConsistentCasingInFileNames": true,
-    "resolveJsonModule": true,
-    "skipLibCheck": true,
-    "sourceMap": true,
-    "strict": true,
-    "types": ["bun-types"],
     "paths": {
       ":pages/*": ["./src/lib/:pages/*"],
       ":components/*": ["./src/lib/:components/*"],
@@ -22,12 +13,19 @@
     },
     "importsNotUsedAsValues": "remove",
     "isolatedModules": true,
-    "preserveValueImports": true,
     "lib": ["esnext", "DOM", "DOM.Iterable"],
     "moduleResolution": "node",
     "module": "esnext",
     "target": "esnext",
-    "ignoreDeprecations": "5.0"
+    "ignoreDeprecations": "5.0",
+    "allowJs": true,
+    "checkJs": true,
+    "esModuleInterop": true,
+    "forceConsistentCasingInFileNames": true,
+    "resolveJsonModule": true,
+    "skipLibCheck": true,
+    "sourceMap": true,
+    "strict": true
   },
   "include": [
     "./vite.config.js",
